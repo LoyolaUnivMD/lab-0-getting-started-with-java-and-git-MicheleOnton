@@ -1,36 +1,36 @@
-// Full Name : Michele Onton Cueva
+// Programmers:  Michele & Zain
+// Course:  CS 212, Dr. John 
+// Due Date: 1/19/24
+// Lab Assignment: 0
+// Problem Statement:  Output programmers’ initial
+// Input: None; there is no user input in this program
+// Output: The initials of the programmers in ASCII art form
+// Credits: we used the link --> https://www.asciiart.eu/
 
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        // Ask the user for his weight in lbs
-        System.out.println("What is your weight in lbs? ");
-        double weight = input.nextDouble();
-        // Ask the user for his height in ft
-        System.out.println("What is your height in ft? ");
-        double height = input.nextDouble();
+        System.out.println("Let's print the initial of Michele");
+    
+        System.out.println("#     #");                                     
+        System.out.println("# #   ## "); 
+        System.out.println("#  # # # ");      
+        System.out.println("#   #  # ");
+        System.out.println("#      # ");      
+        System.out.println("#      # ");     
+        System.out.println("#      # ");
 
-        // Convert lbs to kg
-        double weight_kg = weight * 0.45;
+        System.out.println("Let's print the initial of Zain");
 
-        // Convert ft to m
-        double height_m = height * 0.3048;
+        System.out.println("###########");
+        System.out.println("         #");
+        System.out.println("       #");
+        System.out.println("     #");
+        System.out.println("   #");
+        System.out.println(" ##########");
 
-        // Calculate Health Metrics Index (HMI)
-        double hmi_value = weight_kg / Math.pow(height_m,2);
-
-        // Print out final decisions
-
-        if (hmi_value < 18.5) {
-            System.out.println("HMI of " + hmi_value + " needs calorie increase.");
-        } else if (hmi_value >= 18.5 && hmi_value < 25) {
-            System.out.println("HMI of " + hmi_value + " should maintain current calorie intake.");
-        } else if (hmi_value >= 25 && hmi_value < 30 ) {
-            System.out.println("HMI of " + hmi_value + " should reduce calorie intake.");
-        } else {
-            System.out.println("HMI of " + hmi_value + " needs calorie deficit.");
-        }
+            
+        
     }
 }
